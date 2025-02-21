@@ -11,7 +11,7 @@ const server = http.createServer(app);
 
 // Setting Up Middleware for CORS
 app.use(cors({
-  origin: 'http://localhost:5173',
+  origin: 'https://chat-api-frontend-puce.vercel.app',
   credentials: true
 }));
 
