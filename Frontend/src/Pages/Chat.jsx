@@ -32,7 +32,7 @@ const Chat = () => {
     setIsGenerating(true);
 
     try {
-      const response = await axios.get(`http://localhost:3000/api/generate/${input}`, {
+      const response = await axios.get(`https://chat-api-backend-d3m6.onrender.com/api/generate/${input}`, {
         headers: { "Content-Type": "application/json" },
       });
 
@@ -71,7 +71,7 @@ const Chat = () => {
         return;
       }
 
-      const response = await axios.post('http://localhost:3000/api/saveChat', {
+      const response = await axios.post('https://chat-api-backend-d3m6.onrender.com/api/saveChat', {
         chatHistory: chatHistory,
         userId: user,
       });
