@@ -24,7 +24,7 @@ const Login = () => {
 
     try {
       const resp = await axios.post(
-        "http://localhost:3000/login", 
+        "https://chat-api-backend-d3m6.onrender.com/login", 
         { username, password }, 
         { withCredentials: true } 
       );
@@ -60,7 +60,7 @@ const Login = () => {
   
       // Send token to backend
       const resp = await axios.post(
-        "http://localhost:3000/google-login", 
+        "https://chat-api-backend-d3m6.onrender.com/google-login", 
         { googleToken: credentialResponse.credential },
         { withCredentials: true }
       );
