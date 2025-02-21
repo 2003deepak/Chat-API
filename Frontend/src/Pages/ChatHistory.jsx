@@ -26,7 +26,7 @@ const ChatHistory = () => {
         return;
       }
 
-      const response = await axios.get(`http://localhost:3000/api/getChat/`, {
+      const response = await axios.get(`https://chat-api-backend-d3m6.onrender.com/api/getChat/`, {
         params: { userId: user },
         headers: {
           "Content-Type": "application/json",
