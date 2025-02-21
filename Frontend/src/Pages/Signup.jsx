@@ -55,7 +55,7 @@ const Signup = () => {
     }
 
     try {
-      const resp = await axios.post("http://localhost:3000/register", {
+      const resp = await axios.post("https://chat-api-backend-d3m6.onrender.com/register", {
         username,
         password,
         email,
